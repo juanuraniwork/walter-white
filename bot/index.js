@@ -357,7 +357,9 @@ client.on("interactionCreate", (interaction) => {
         `🧑🏻‍🏭  Encargado: ${encargado}\n⚠️ Prioridad: ${prioridad}\n📅  Fecha: ${fecha}\n🧪  Testing: ${testing}\n💻  Seccion: ${seccion}\n⚙️  Modulos: ${modulos}\n🧵  Hilo: ${hilo}\n✉️  Card: ${card}`
       );
     case "info":
-      return interaction.reply("Testing");
+      return interaction.reply(
+        `Comandos: /carita (mensaje) (carita) *devuelve un mensaje con una carita* \n/testing (hilo) (card) (fecha) (testing) (modulos) (seccion) (encargado) (prioridad) *devuelve un mensaje con la información para realizar el testing* \n/limpiar_rama (rama) *devuelve el comando para limpiar una rama de git*`
+      );
     case "limpiar_rama":
       const rama = interaction.options.get("rama").value;
 
