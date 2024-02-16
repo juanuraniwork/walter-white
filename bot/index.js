@@ -358,7 +358,7 @@ client.on("interactionCreate", (interaction) => {
       );
     case "info":
       return interaction.reply(
-        `**Comandos:**\n\n**/carita (mensaje) (carita):**\n  Devuelve un mensaje con una carita\n**/testing (hilo) (card) (fecha) (testing) (modulos) (seccion) (encargado) (prioridad):**\n  Devuelve un mensaje con la información para realizar el testing\n**/limpiar_rama (rama):**\n  Devuelve el comando para limpiar una rama de git*`
+        `**Comandos disponibles:**\n\n**/carita (mensaje) (carita):**\nDevuelve un mensaje con una carita\n\n**/testing (hilo) (card) (fecha) (testing) (modulos) (seccion) (encargado) (prioridad):**\nDevuelve un mensaje con la información para realizar el testing\n\n**/limpiar_rama (rama):**\nDevuelve el comando para limpiar una rama de git*`
       );
     case "limpiar_rama":
       const rama = interaction.options.get("rama").value;
