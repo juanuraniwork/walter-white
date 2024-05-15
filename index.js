@@ -14,8 +14,6 @@ const {
   ApplicationCommandOptionType,
 } = require("discord.js");
 
-require("dotenv").config();
-
 const botCommands = [
   {
     name: "carita",
@@ -55,7 +53,7 @@ const botCommands = [
   },
   {
     name: "testing",
-    description: "Plantilla para solicitar el testing de funcinoalidades",
+    description: "Plantilla para solicitar el testing de funcionalidades",
     options: [
       {
         name: "encargado",
